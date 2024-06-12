@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일기 작성</title>
+    <style>
+        .container {
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 1);
+            width: 1440px;
+            height: 1901px;
+            border-radius: 32px;
+            position: absolute;
+        }
+        .header-container {
+            width: 1440px;
+            height: 133px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 96px;
+            box-sizing: border-box;
+        }
+        .header-logo {
+            color: rgba(20, 30, 12, 1);
+            font-family: 'Newsreader', serif;
+            font-size: 32px;
+            letter-spacing: -1px;
+        }
+        .header-button {
+            background-color: rgba(92, 172, 246, 1);
+            height: 48px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+        .header-button-small {
+            background-color: rgba(92, 172, 246, 1);
+            width: 172px;
+            height: 52px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 20px;
+            color: white;
+        }
+        .content-container {
+            padding: 150px 50px;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 20px;
+            color: rgba(20, 30, 12, 1);
+        }
+        .content-item {
+            margin-bottom: 30px;
+        }
+        .content-item span {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .content-item input, .content-item textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid rgba(20, 30, 12, 1);
+            padding: 10px;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 18px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        .content-item textarea {
+            resize: none;
+            height: 1200px;
+        }
+        .button-save {
+            background-color: rgba(92, 172, 246, 1);
+            width: 150px;
+            height: 50px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <span class="header-logo">하루의 안식처</span>
+            <div class="header-button">회원 가입</div>
+            <div class="header-button-small">일기 목록</div>
+            <div class="header-button-small">공지사항</div>
+        </div>
+        <div class="content-container">
+            <div class="content-item">
+                <span>날짜</span>
+                <input type="text" placeholder="YYYY-MM-DD">
+            </div>
+            <div class="content-item">
+                <span>날씨</span>
+                <input type="text" placeholder="오늘의 날씨">
+            </div>
+            <div class="content-item">
+                <span>일기 제목</span>
+                <input type="text" placeholder="일기 제목을 입력하세요">
+            </div>
+            <div class="content-item">
+                <span>일기 내용</span>
+                <textarea placeholder="오늘의 일기를 작성하세요"></textarea>
+            </div>
+        </div>
+        <div class="button-save">일기 저장</div>
+    </div>
+</body>
+</html>
